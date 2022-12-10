@@ -253,3 +253,16 @@ h1{
 #about img{
     width: 100%;
 }
+
+
+.heading-content{
+    padding-top: 30%;
+}
+
+.heading{
+    font-size: 48px;
+}
+
+.summary{
+    line-height: 1.3;
+}
