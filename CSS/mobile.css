@@ -1,0 +1,255 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root{
+    --max-width-large: 90% ;
+}
+
+/* Home Page */
+
+#landing-page{
+    height: 70vh;
+}
+
+
+.heading-grid{
+    grid: none;
+}
+
+.heading-grid .right{
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    padding-left: 0;
+    
+}
+
+.grid-2-old{
+    grid: none;
+}
+
+.grid-1-old{
+    grid: none;
+}
+
+.grid-1-old .grid-1-content{
+    grid: none;
+}
+
+.grid-3-old{
+    grid: none;
+    grid-gap: var(--spacing-6);
+}
+
+.heading{
+    font-size: 56px;
+}
+
+
+.footer-bottom{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: var(--spacing-4);
+}
+
+aside{
+    display: none;
+}
+
+
+/* nav-bar */
+
+.nav-tabs{
+    grid-gap: var(--spacing-1);
+    -ms-grid-columns: 1fr var(--spacing-1) 1fr var(--spacing-1) 1fr;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.nav-tabs a{
+    padding: var(--spacing-2) 4px;
+    
+}
+
+
+
+
+/* Individal project image */
+
+
+h1{
+    font-size: 40px;
+}
+
+.project-about {
+    padding: 0 var(--spacing-2);
+}
+
+#individual-project-description .container{
+    width: 100%;
+    padding: 0;
+}
+
+#individual-project-content{
+    grid: none;
+    width: 90%;
+    margin: auto;
+}
+
+.project-bg-image img{
+    height: 40vh;
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: auto;
+    
+}
+
+.read-next{
+    padding: 0px;
+}
+
+#individual-project-description .container{
+    grid: none;
+    grid-gap: var(--spacing-3);
+}
+
+.circle-diagram img{
+    padding: 0;
+    max-width: 90%;
+    margin: auto;
+}
+
+.grid-2{
+    grid: none;
+}
+
+.grid-3{
+    grid: none;
+}
+
+.user-scenario iframe {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+
+}
+
+.phone-video{
+    grid: none;
+    grid-gap: var(--spacing-4);
+}
+
+.solution-box{
+    grid: none;
+}
+
+.image-section {
+    padding: 0;
+}
+
+.image-section .logo{
+    padding: 0;
+}
+
+.image-section .logo img{
+    padding-left: 20%;
+}
+
+.grid-1{
+    grid: none;
+}
+
+.visual-grid-2{
+    grid: none;
+}
+
+.table{
+    grid: none;
+    grid-gap: var(--spacing-3);
+}
+
+.table .heading{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.table .height{
+    height: auto;
+}
+
+.video-complete-box .video{
+    padding: 0 var(--spacing-3);
+}
+
+.video-complete-box .video-content{
+    padding: 0 var(--spacing-3);
+}
+
+.image-padding{
+    padding: 0px;
+}
+
+.examples{
+    grid: none;
+    grid-gap: var(--spacing-1);
+}
+
+.examples .left-space{
+    padding-left: var(--spacing-6);
+}
+
+.examples p{
+    padding-left: var(--spacing-6);
+}
+
+
+.about-content{
+    grid: none;
+}
+
+.about-multiple-images{
+    grid: none;
+}
+
+.about-multiple-images-2{
+    grid: none;
+}
+.about-multiple-images-3{
+    grid: none;
+}
+.about-multiple-images-4{
+    grid: none;
+}
+.about-multiple-images-5{
+    grid: none;
+}
+
+
+.about-multiple-images, .about-multiple-images-2, .about-multiple-images-3, .about-multiple-images-4, .about-multiple-images-5{
+    grid-gap: var(--spacing-8);
+}
+
+
+.about-multiple-images-2, .about-multiple-images-4, .about-multiple-images-5{
+    margin-top: var(--spacing-8);
+}
+
+#about img{
+    width: 100%;
+}
