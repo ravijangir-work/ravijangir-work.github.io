@@ -105,6 +105,14 @@ h1{
     margin: auto;
 }
 
+#individual-project-description .techfest-context{
+    margin: auto;
+    grid: none;
+    width: 90%;
+    padding: 0px;
+    grid-gap: var(--spacing-3);
+}
+
 .project-bg-image img{
     height: 40vh;
     display: block;
