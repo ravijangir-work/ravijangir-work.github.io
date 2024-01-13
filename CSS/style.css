@@ -93,6 +93,19 @@ a{
     color: var(--secondary-font-color);
 }
 
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hairline{
+    letter-spacing: 0.25rem;
+    font-size: 14px;
+    color: var(--tertiary-font-color);
+
+}
+
 .hairline-large{
     letter-spacing: 0.25rem;
     font-size: 18px;
@@ -249,7 +262,7 @@ a.top{
 /* Landing Page */
 
 #landing-page{
-    height: 80vh;
+    height: 85vh;
 }
 
 .name-color{
@@ -297,10 +310,12 @@ a.top{
 
 .heading-content{
     color: #ffffff;
-    padding-top: 142px;
+    /* padding-top: 142px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -315,15 +330,63 @@ a.top{
 }
 
 .heading{
-    padding-top: 8px;
-    font-size: 4em;
+    margin-top: 24px;
+    font-size: 48px;
     font-family: heading;
+    text-align: center;
+    padding: 0px 10%;
+   
 }
+
 
 .summary{
     font-size: 24px;
     color: #A1A1A6;
     font-weight: 400;
+}
+
+.summary-landingpage{
+    font-size: 28px;
+    color: var(--background-secondary-font-color);
+    text-align: center;
+}
+
+.about-landingpage{
+    font-size: 22px;
+    line-height: 175%;
+    text-align: center;
+    margin-top: 64px;
+    color: var(--background-secondary-font-color);
+}
+
+.identity-landingpage{
+    color: #2D7BF7;
+}
+
+
+.black-stick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-stick-hyphen{
+    color: #333;
+    text-align: center;
+    background-color: #fff;
+    border-bottom-left-radius: 0;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Roboto,sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 26px;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .bio{
@@ -334,6 +397,19 @@ a.top{
 .postman{
     color: #ffffff;
     font-weight: 700;
+}
+
+.job-landingpage{
+    color: #fff;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #fff;
+    transition: all 0.20s ease-in-out;
+    
+}
+
+.job-landingpage:hover{
+    color: #2D7BF7;
+    border-bottom: 1px solid #2D7BF7;
 }
 
 .heading-grid{
@@ -400,6 +476,7 @@ a.top{
 .card img{
     width: 100%;
     margin-bottom: var(--spacing-3);
+    border-radius: 8px;
 }
 
 .card-small img{
@@ -407,6 +484,7 @@ a.top{
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 8px;
 }
 
 .grid-1-content video{
@@ -589,6 +667,8 @@ a.top{
     -webkit-transform: translateY(-4px);
         -ms-transform: translateY(-4px);
             transform: translateY(-4px);
+
+    border-radius: 8px;
 }
 
 .grid-3-old{
@@ -620,6 +700,9 @@ a.top{
     -webkit-transition-duration: 250ms;
          -o-transition-duration: 250ms;
             transition-duration: 250ms;
+
+
+    border-radius: 8px;
 }
 
 .grid-3-old a:hover::after{

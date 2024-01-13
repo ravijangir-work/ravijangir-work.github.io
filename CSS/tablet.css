@@ -5,10 +5,11 @@
     --max-width-content: 90% ;
 }
 
-#landing-page{
-    height: 70vh;
-}
 
+
+.heading{
+    padding: 0px;
+}
 
 .heading-grid{
     grid: none;

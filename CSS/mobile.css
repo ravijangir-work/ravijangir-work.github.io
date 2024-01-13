@@ -11,9 +11,7 @@
 
 /* Home Page */
 
-#landing-page{
-    height: 70vh;
-}
+
 
 
 .heading-grid{
@@ -46,9 +44,18 @@
 }
 
 .heading{
-    font-size: 56px;
+    font-size: 40px;
+    padding: 0px;
 }
 
+.about-landingpage{
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+.summary-landingpage{
+    font-size: 24px;
+}
 
 .footer-bottom{
     -webkit-box-orient: vertical;
@@ -263,13 +270,9 @@ h1{
 }
 
 
-.heading-content{
-    padding-top: 30%;
-}
 
-.heading{
-    font-size: 48px;
-}
+
+
 
 .summary{
     line-height: 1.3;
