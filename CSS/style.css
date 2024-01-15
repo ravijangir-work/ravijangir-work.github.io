@@ -747,6 +747,7 @@ a.top{
 .about-content .left {
     border: 3px solid var(--brand-color);
     padding: var(--spacing-3);
+    border-radius: 16px;
 }
 
 .about-content .right{
@@ -778,4 +779,8 @@ svg:hover{
 .monograms-full-section iframe{
     width: 100%;
     object-fit: cover;
+}
+
+.about-image{
+    border-radius: 8px;
 }
