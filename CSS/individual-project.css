@@ -958,8 +958,8 @@
 .about-multiple-images-3{
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr var(--spacing-2) 2fr var(--spacing-2) 2fr;
-    grid-template-columns: 1fr 2fr 2fr;
+    -ms-grid-columns: 1fr var(--spacing-2) 2fr var(--spacing-2) 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-gap: var(--spacing-2);
     -webkit-box-align: center;
         -ms-flex-align: center;
