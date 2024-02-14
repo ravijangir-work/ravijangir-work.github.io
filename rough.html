@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #000; /* Add a blinking cursor effect */
+      font-family: monospace;
+      font-size: 20px;
+    }
+  </style>
+  <title>Typewriter Effect</title>
+  <div></div>
+</head>
+<body>
+
+  <div class="typewriter" id="typewriter"></div>
+  <div>I'm Ravi</div>
+
+  <script>
+    const words = ["Hello, I'm Ravi", "I'm a Designer", "I'm a Researcher"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    const typewriterElement = document.getElementById('typewriter');
+
+    function type() {
+      if (charIndex < words[wordIndex].length) {
+        typewriterElement.textContent += words[wordIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+      } else {
+        setTimeout(erase, 1000); // Wait before erasing
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typewriterElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50); // Adjust erasing speed here (in milliseconds)
+      } else {
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 500); // Wait before typing the next word
+      }
+    }
+
+    // Start the typewriter effect
+    setTimeout(type, 500);
+
+  </script>
+
+</body>
+</html>
