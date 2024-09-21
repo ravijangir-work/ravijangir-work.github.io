@@ -465,6 +465,16 @@ a.top{
 }
 
 
+.full-width-grid{
+    margin-bottom: var(--spacing-8);
+}
+
+.full-width-grid img{
+    width: 100%;
+    margin-bottom: var(--spacing-3);
+    border-radius: 16px;
+}
+
 
 .description h4{
     margin-bottom: var(--spacing-1);
