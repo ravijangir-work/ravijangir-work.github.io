@@ -67,22 +67,38 @@
         <aside id="index-menu" class="index-menu">
             <div class="menu">
                 <div class="tabs hairline-smallest">CONTENT</div>
-                <a href="#research-area" class="research-area tabs">Research Questions</a>
-                <a href="#overview" class="overview tabs">Process</a>
-                <a href="#apparatus" class="apparatus tabs">Apparatus Design</a>
-                <a href="#researchactivity" class="researchactivity tabs">Research Activity</a>
+                <a href="#background" class="background tabs">Background</a>
+                <a href="#research-questions" class="research-questions tabs">Research Questions</a>
+                <a href="#research-methodology" class="research-methodology tabs">Research Method</a>
+                <a href="#data-analysis" class="data-analysis tabs">Data Analysis</a>
                 <a href="#findings" class="findings tabs">Findings</a>
                 <a href="#model" class="model tabs">Model</a>
-                <a href="#design" class="design tabs">Design</a>
+                <a href="#design-opportunities" class="design-opportunities tabs">Design Opportunities</a>
+                <a href="#final-designs" class="final-designs tabs">Final Designs</a>
                 <a href="#reflections" class="reflections tabs">Reflections</a>
             </div>
         </aside>
         <div>
 
-            <section id="research-area" class="project-content spacing-8">
+            <section id="background" class="project-content spacing-8">
+                <h2>Backgound</h2>
+                <p>With the advent of language models, text generation is becoming viable enough to be used in writing interfaces to provide synchronous next-phrase suggestions.</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/Background-image.png" alt="">
+                <p class="spacing-4">While there is a rapid progress in NLP technologies that enable such interfaces, research in understanding writer’s interactions with such technologies and their effects is still emerging.</p>
+                <p class="spacing-2">Therefore we decided to shed light on the writer’s cognitive processes while interacting with suggestions.</p>
+                
+                
+            </section>
+
+            <section id="research-questions" class="project-content spacing-8">
                 <h2>Research Questions</h2>
-                <p>We intensely did the literature review to understand what research has already been done in the the field of studying writer-suggestion interaction. After doing it, we came up with the following research questions to contribute towards this growing field:</p>
-                <div class="grid-3 secondary-content">
+                <p>While extensive research has been conducted on this topic from a behavioral perspective, there is limited exploration from a cognitive viewpoint, leading us to our Research Question 1 (RQ1).</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/RQ1.png" alt="">
+                <p class="spacing-4">We also sought to understand how the presence and content of suggestions impact the writing process, which inspired our Research Question 2 (RQ2).</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/RQ2.png" alt="">
+                <p class="spacing-4">Language models often inherit biases and dominant views from their training text corpus. This issue is particularly relevant as generative AI becomes integral to our lives. Understanding how these biases affect human interaction with technology, especially in the writing process, guided us to our Research Question 3 (RQ3).</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/RQ3.png" alt="">
+                <!-- <div class="grid-3 secondary-content">
                     <div class="insight">
                         <h5 class="auth-dark-orange-colour">Question-1</h5>
                         <p>How do writers interact with inline next-phrase suggestions, and what governs these interactions?</p>
@@ -95,26 +111,49 @@
                         <h5 class="auth-dark-orange-colour">Question-3</h5>
                         <p>How does the degree of misalignment between writers opinion and model’s bias affect writer/suggestion system interactions?</p>
                     </div>
-                </div>
+                </div> -->
             </section>
 
-            <section id="overview" class="project-content">
-                <h2>Process</h2>
-                <p>Our research aims not to test or validate particular hypotheses or approaches for giving text suggestions but to collect systematic observations and construct knowledge inductively on the writer’s interactions with text suggestions using a grounded approach. Following are the three key parts of the process:</p>
-                <div class="grid-3 secondary-content">
-                    <div class="insight">
-                        <h5 class="auth-dark-orange-colour">Apparatus Design</h5>
-                        <p>We developed two instances of suggestion systems — one fine-tuned on positive movie reviews and another on negative movie reviews.</p>
+
+            <section id="research-methodology" class="project-content spacing-8">
+                <h2>Research Methodology</h2>
+                <p>For this research, it is crucial to observe, collect, and analyze participants' interactions while writing. Consequently, we brainstormed extensively on what and how to ask our participants to write.</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/ResearchActivity-img1.png" alt="">
+
+                <h4 class="primary-content">Why movie review?</h4>
+                <p class="spacing-3">TThe following reasons contributed to the decision to finalize movie reviews as the core task for users in this research:</p>
+                    <div class="grid-3 secondary-content">
+                        <div class="insight">
+                            <h5 class="auth-dark-orange-colour">Long & time consuming</h5>
+                            <p>Writing movie reviews involves expressing one’s opinion and arguing for it</p>
+                        </div>
+                        <div class="insight">
+                            <h5 class="auth-dark-orange-colour">Missing key steps</h5>
+                            <p>Movie reviews have a star rating which will give us a linear scale of sentiment that may be used to create a variety of writer -suggestion misalignments.</p>
+                        </div>
+                        <div class="insight">
+                            <h5 class="auth-dark-orange-colour">Complex & Daunting</h5>
+                            <p>Countless movie reviews exist on the internet, along with available datasets, giving us a rich resource to train a language model.</p>
+                        </div>
+                        
                     </div>
-                    <div class="insight">
-                        <h5 class="auth-dark-orange-colour">Research Activity</h5>
-                        <p>We asked participants to watch 2 movies & write 2 movie reviews — one review without suggestions & other with suggestions.</p>
-                    </div>
-                    <div class="insight">
-                        <h5 class="auth-dark-orange-colour">Analysis</h5>
-                        <p>We qualitatively analysed these with the screen recordings of the writers’ writing process.</p>
-                    </div>
-                </div>
+
+                <h4 class="primary-content">How should we ask them to write?</h4>
+                <p class="spacing-3">We asked participants to complete two tasks: First, they watched a movie we selected and wrote a review without any suggestions. In the second task, they watched a different movie, this time writing their review with suggestions provided.</p>
+                <p class="spacing-3">We conducted our research with 14 L2 participants, individuals for whom English is a second language rather than their native tongue.</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/How should we ask them to write_.png" alt="">
+                
+                <h4 class="primary-content">How should we collect data?</h4>
+                <p class="spacing-3">We asked participants to write their movie reviews in our presence. Due to COVID-19, the setup included two researchers and one participant, who shared their screen while composing the review. We implemented a concurrent think-aloud protocol, encouraging participants to verbalize their thoughts during the writing process. Following this, we conducted a retrospective think-aloud protocol, where we recorded their writing session and later played it back for them, asking follow-up questions. The entire session was recorded, and we created memos during the process.</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/How should we collect data_.png" alt="">
+
+            </section>
+
+            <section id="data-analysis" class="project-content">
+                <h2>Data Analysis</h2>
+                <p>We conducted thematic analysis collaboratively using the Atlas.ti tool.</p>
+                <img class="problem-area-image" src="/Images/PredictiveText/DataAnalysis.png" alt="">
+                
              </section>
 
             <!-- <section id="method" class="project-content">
@@ -143,7 +182,7 @@
     
 
             
-            <section id="apparatus" class="project-content">
+            <!-- <section id="apparatus" class="project-content">
                 <h2>Apparatus Design</h2>
                 <p>Our interface consists of a text editor capable of providing phrase and word completion suggestions both at the end of and in between text. We built three versions of the text editor, one with suggestions powered by a language model trained on an IMDB review corpus with reviews with an average rating of 2.5, the second with an average rating of 8.5, and the third without suggestions. The suggestion system takes in the last 50 words the user has written to compute the suggestion using the language model running in the back-end. </p>
                 
@@ -197,7 +236,7 @@
                 <h2>Research Activity</h2>
                 <p>We asked participants to watch two movies and write two movie reviews by using the above apparatus — one review without suggestions and another with suggestions. Following is the step by step process of the research activity that we followed to get extract the qualitative data. </p>
                 <img class="problem-area-image" src="/Images/PredictiveText/Research Activity.png" alt="">
-            </section>
+            </section> -->
 
             <section id="findings" class="project-content">
                 <h2>Findings</h2>
@@ -205,51 +244,56 @@
                     Following were some of the findings along with what users were suggested and what did the finally wrote to back the findings:
                 </p>
                 <div class="primary-content">
-                    <div class="ai-findings">
+                    <!-- <div class="ai-findings">
                         <img src="/Images/PredictiveText/1.png" alt="">
-                        <h5>Suggestions prompt to generate ideas</h5>
-                    </div>
+                        <h5>Contribution of suggestions to the processes of composition</h5>
+                    </div> -->
                     <div class="examples">
-                        <p class="left-space">
-                            Writers often abstracted a topic/theme present in a suggestion and used it as an inspiration for new sentences. When writers did not have a proposal, instead of coming up with one from scratch, they would abstract a topic from the suggestion and use that as a prompt to generate a proposal for their upcoming sentence.
-                        </p>
-                        <p>
-                            U9 was suggested <span class="suggestion">“...but the writing is also pretty good." </span> by the system. They rejected the specific opinion in the suggestion but picked up the theme: ’writing of the film’ and expressed their own opinion about it, <span class="wrong-suggestion"> “the writing of the film was weird”</span>. U9 later remarked: <span class="right-suggestion">“I saw the term writing and [thought might as well write about it]”</span>.
-                        </p>
+                        <h5 class="left-space spacing-2">Contribution of suggestions to the processes of composition</h5>
+                        <div>
+                            <p>Abstracted themes from suggestions to inspire new sentences</p>
+                            <p>Adapted sentence structures from suggestions in their own writing</p>
+                            <p>Copied suggestions that matched their working memory</p>
+                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="primary-content">
-                    <div class="ai-findings">
+                    <!-- <div class="ai-findings">
                         <img src="/Images/PredictiveText/2.png" alt="">
                         <h5>Augmented the vocabulary of the writer</h5>
-                    </div>
+                    </div> -->
                     <div class="examples">
-                        <p class="left-space">
-                            Writers extracted vocabulary and phrases from the suggestions and used them to express their ideas (i.e., translate their proposals.)
-                        </p>
-                        <p>
-                            This was evident when we compared writers’ with-suggestion reviews with their without-suggestion reviews. We observed increased use of <span class="suggestion">“classic movie-review language.”</span>  (as described by one of the writers - U5; such as <span class="right-suggestion">"a must-see for all ..."</span>  (U5),  <span class="right-suggestion">"... is top-notch."</span> (U7), <span class="right-suggestion">"... I wouldn’t really recommend it"</span> (U9) etc.
-                        </p>
+                        <h5 class="left-space spacing-2">Evaluating Suggestions</h5>
+                        <div>
+                            <p>Independent evaluation of suggestions</p>
+                            <p>Evaluation with respect to text written so far</p>
+                            <p>Evaluation with respect to the Working Memory State (WMS)</p>
+                            <p>Evaluation influenced by the beliefs about the suggestion system</p>
+                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="primary-content">
-                    <div class="ai-findings">
+                    <!-- <div class="ai-findings">
                         <img src="/Images/PredictiveText/3.png" alt="">
                         <h5>Misalignment leads to rejection</h5>
-                    </div>
+                    </div> -->
                     <div class="examples">
-                        <p class="left-space">
-                            As expected, misalignments between the writer’s intention and suggestions increased the chances of writers rejecting suggestions. Misalignment became an important criterion for evaluation. 
-                        </p>
-                        <p>
-                            For example, U3 loved the movie (rating it 9) but was assigned a system with opposite sentiments (degree of misalignment = 6.5). U3 remarked, <span class="wrong-suggestion">“Suggestions were continuously telling me it was a very bad movie... I was like no, it was not a really bad movie.”</span>
-                        </p>
+                        <h5 class="left-space spacing-2">Effects on the writing process</h5>
+                        <div>
+                            <p>Alignment between suggested text and the writer's intent influences their writing process</p>
+                            <p>Relevant suggested text shapes their next writing steps</p>
+                            <p>Suggestions can distract users based on their current writing stage</p>
+                            
+                        </div>
+                        
                     </div>
                 </div>
 
-                <div class="primary-content">
+                <!-- <div class="primary-content">
                     <div class="ai-findings">
                         <img src="/Images/PredictiveText/4.png" alt="">
                         <h5>Writer’s movie schemas controlled the acceptance of suggestions</h5>
@@ -310,7 +354,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
             </section>
 
             <section id="model" class="project-content">
@@ -321,8 +365,8 @@
 
             </section>
 
-            <section id="design" class="project-content">
-                <h2>Design</h2>
+            <section id="design-opportunities" class="project-content">
+                <h2>Design Opportunities</h2>
                 <p>We believe future systems can leverage the above research findings and following design implications that could be helpful in building effective Human-AI suggestive systems in future:</p>
                 <div class="grid-3 secondary-content">
                     <div class="insight">
@@ -346,6 +390,15 @@
                         <p>Making the process of extracting some phrases from the suggestive text seamless.</p>
                     </div>
                 </div>
+                <!-- <img class="problem-area-image" src="/Images/PredictiveText/Onboarding Users.png" alt="">
+                <img class="problem-area-image" src="/Images/PredictiveText/When the user starts writing.png" alt=""> -->
+
+             </section>
+
+            <section id="final-designs" class="project-content">
+                <h2>Final Designs</h2>
+                <p>Building on the identified design opportunities, I created the following screens to illustrate a human-centered approach for AI-powered next-phrase suggestion systems:</p>
+                
                 <img class="problem-area-image" src="/Images/PredictiveText/Onboarding Users.png" alt="">
                 <img class="problem-area-image" src="/Images/PredictiveText/When the user starts writing.png" alt="">
 
