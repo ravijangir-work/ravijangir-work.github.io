@@ -53,6 +53,11 @@
     padding: 0px;
 }
 
+.grid-solution{
+    grid: none;
+    grid-gap: var(--spacing-2);
+}
+
 .about-landingpage{
     font-size: 16px;
     margin-top: 32px;

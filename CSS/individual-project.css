@@ -624,6 +624,16 @@
             box-shadow: 0px 16px 24px -8px rgba(107, 107, 107, 0.24);
 }
 
+.solution-video video{
+    width: 100%;
+    border-radius: 8px;
+    border: #efefef 2px solid;
+    /* -webkit-box-shadow: 0px 16px 24px -8px rgba(107, 107, 107, 0.24);
+            box-shadow: 0px 16px 24px -8px rgba(107, 107, 107, 0.24); */
+    margin-bottom: var(--spacing-2);
+   
+}
+
 .problem-area-image{
     width: 100%;
     -o-object-fit: cover;

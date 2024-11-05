@@ -65,6 +65,12 @@ h5{
     line-height: 1.2;
 }
 
+h7{
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
 
 
 p{
@@ -550,6 +556,13 @@ a.top{
             align-items: center;
 }
 
+
+.grid-solution{
+    display: grid;
+    grid-template-columns: 6fr 7fr;
+    grid-gap: 80px;
+    align-items: top;
+}
 
 .grid-1 a{
     display: block;
