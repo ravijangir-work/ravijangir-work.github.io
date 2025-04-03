@@ -28,7 +28,7 @@
             </a>
             <div class="nav-tabs">
                 <a href="/index.html#projects">Projects</a>
-                <a href="/RaviJangir-ProductDesigner.pdf" target="_blank">Resume</a>
+                <a href="/RaviJangir-UXR.pdf" target="_blank">Resume</a>
                 <a href="/about.html">About</a>
             </div>
         </div>
@@ -42,15 +42,15 @@
             <div class="container2">
                 <div class="info">
                     <p class="hairline-small">DURATION</p>
-                    <p> 3 months </p>
+                    <p> 2 months </p>
                 </div>
                 <div class="info">
                     <p class="hairline-small">MY ROLE</p>
-                    <p> Product Designer </p>
+                    <p> UX Researcher and Product Designer </p>
                 </div>
                 <div class="info">
                     <p class="hairline-small">METHODS</p>
-                    <p> Semi-structured User Interviews, Co-design Workshop, Market Research, Wireframing, Rapid Prototyping, High-Fidelity Prototyping, Usability Testing, Motion Design</p>
+                    <p> Semi-structured User Interviews, Online Data Scraping, Moderated Usability Testing, Wireframing, Rapid Prototyping, High-Fidelity Prototyping</p>
                 </div>
             </div>
         </div>
@@ -102,19 +102,16 @@
     <main id="individual-project-content">
         <aside id="index-menu" class="index-menu">
             <div class="menu">
-                <div class="tabs hairline-smallest">OVERVIEW</div>
                 <!-- <a href="#introduction" class="introduction tabs">Introduction</a> -->
-                <a href="#problem-area" class="problem-area tabs">Problem Statement</a>
-                <a href="#goal" class="goal tabs">Goals</a>
-                <a href="#solution" class="solution tabs">Solution</a>
-                <a href="#impact" class="impact tabs">Impact</a>
-
-                <div class="tabs hairline-smallest spacing-3">PROCESS</div>
-                <a href="#design-approach" class="design-approach tabs">Design Approach</a>
-                <a href="#research" class="research tabs">Research</a>
-                <a href="#ideation" class="ideation tabs">Ideation</a>
-                <a href="#usability-testing" class="usability-testing tabs">Usability Testing</a>
-                <a href="#final-design" class="final-design tabs">Final Design</a>
+                <div class="tabs hairline-smallest">CONTENT</div>
+                <a href="#design-approach" class="background tabs">Background</a>
+                <a href="#research" class="problem tabs">Problem Context</a>
+                <a href="#ideation" class="discovery-research tabs">Discovery Research</a>
+                <a href="#usability-testing" class="revised-problem tabs">Final Problem</a>
+                <a href="#final-design" class="proposed-system tabs">Proposed System</a>
+                <a href="#final-design" class="proposed-design tabs">Proposed Design</a>
+                <a href="#final-design" class="usability-testing tabs">Usability Testing</a>
+                <a href="#final-design" class="impact tabs">Impact</a>
                 <!-- <a href="#teaser" class="teaser tabs">Teaser</a> -->
                 <a href="#reflections" class="reflections tabs">Reflections</a>
             </div>
@@ -126,210 +123,84 @@
                 <p>Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.</p>
             </section> -->
 
-            <section id="problem-area" class="project-content spacing-8">
-                <h2>Problem Statement</h2>
-                <p>After conducting 1:1 meetings with key stakeholders and performing preliminary research, I refined the problem statement and reframed it using the extended Jobs to Be Done framework:</p>
+            <section id="background" class="project-content spacing-8">
+                <h2>Background</h2>
+                
+                <div class="grid-solution">
+                    <p>At Postman, I primarily worked as a Product Designer but also took on User Research responsibilities at various stages of this project. My goal was to design the MVP for a new assistive authorization and authentication experience, making the process smoother for developers. In this case study, I’ll highlight how my user research contributed to the project’s success.</p>
+                    <img class="productmetric-image" src="/Images/Postman Auth Experience/Role.png" alt="">
+                </div>
+
+            </section>
+
+            <section id="problem" class="project-content">
+                <h2>Problem Context</h2>
+                <div class="grid-solution">
+                    <p>One of the key steps in sending a successful API request is authentication and authorization, which varies depending on the type of request. However, developers frequently struggle with this step.</p>
+                    <img class="productmetric-image" src="/Images/Postman Auth Experience/ProductMetric.png" alt="">
+                </div>
+            </section>
+
+            <section id="discovery-research" class="project-content">
+                <h2>Discovery Research</h2>
+                <p>Given the constraints of time and budget, conducting user interviews with Postman’s end users wasn’t feasible. Recruiting participants and scheduling interviews would have delayed the process. However, identifying pain points was crucial to defining what this MVP should address.</p>
+                <p class="spacing-2">To gain firsthand insights, I tested the top 20 APIs on Postman, focusing specifically on the authorization and authentication experience. To further validate my observations, I analyzed qualitative content from Reddit discussions, where developers shared their struggles with API authentication.</p>
+                <p class="spacing-2">Additionally, I conducted 1:1 sessions with the Chief Engineering Architect to discuss and refine the identified pain points. Through this triangulation of data, we defined the core problems that needed to be solved in the MVP.</p>
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Discovery Research.png" alt="">
+            </section>
+
+            <section id="revised-problem" class="project-content">
+                <h2>Final Problem</h2>
+                <p>This process helped me refine the problem statement, which I then structured using the Jobs-To-Be-Done (JTBD) framework to ensure clarity, user-centered focus, and business alignment. It also helped in bringing all stakeholders onto the same page.</p>
                 <img class="problem-area-image" src="/Images/Postman Auth Experience/Problem Statement.png" alt="">
-                
-                   
             </section>
 
-            <section id="goal" class="project-content">
-                <h2>Goals</h2>
-                <!-- <p>Every day, millions of people use Postman, creating lots of collections, workspaces, and APIs. But they have trouble seeing how well they're doing. They want to know how their APIs are doing and what users think. Furthermore, as a vital bridge connecting producers and consumers, our aim is also to empower producers to build “quality” APIs for their consumers. </p> -->
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/ProblemArea-PostmanAuth.png" alt="">
+
+            <section id="proposed-system" class="project-content">
+                <h2>Proposed System</h2>
+                <p>Before diving into design, it was essential to define how the proposed system should function. Drawing inspiration from [book name], I collaborated with the Chief Engineering Architect to craft an initial framework. Feedback from stakeholders helped iteratively refine this foundation before starting the design process.</p>
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Proposed System.png" alt="">
+                
+                
             </section>
 
-            <section id="solution" class="project-content">
-                <h2>Solution</h2>
-                <p >After several round of iterations and testing, we finalized the design for MVP of new authorization experience. Following is the before and after comparison:</p>
-                
-                <div class="spacing-8">
-                    <h4>Before</h4>
-                    <img class="problem-area-image" src="/Images/Postman Auth Experience/Problem-SS-1.png" alt="">
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Problem-SS-2.png" alt="">
-                
+            <section id="proposed-design" class="project-content">
+                <h2>Proposed Design</h2>
+                <p>Once the foundation was set, I switched back to my designer role to craft interaction flows. Through continuous reflection and feedback, I refined the designs to ensure they effectively addressed user pain points.</p>
+                <div class="spacing-4">
+                    <div class="solution-video">
+                        <video autoplay loop src="/Videos/FinalVideo-Authorization-BeforeTesting-Research.mp4"></video>
+
                 </div>
+                
+            </section>
 
-                <div class="spacing-8">
-
-                    <h4>After</h4>
-                    
-                    <div class="spacing-4">
-                        <div class="grid-solution">
-                            <h7>Step 1: Opening new authorization experience</h7>
-                            <p>A contextual nudge in the existing authorization tab directs users to the new, streamlined authorization experience.</p>
-                        </div>
-                        <div class="spacing-4">
-                            <div class="solution-video">
-                                <video autoplay loop src="/Videos/OpeningNewAuthExperience.mp4"></video>
-        
-                        </div>
-                    </div>
-
-                    <div class="spacing-8">
-                        <div class="grid-solution">
-                            <h7>Step 2: Sending API request</h7>
-                            <p>Users no longer need to select an authorization type manually; automatic mapping and assistive text make it easy to find and add credentials.</p>
-                        </div>
-                        <div class="spacing-4">
-                            <div class="solution-video">
-                                <video autoplay loop src="/Videos/SendingAPIRequest.mp4"></video>
-        
-                        </div>
-                    </div>
-
-                    <div class="spacing-8">
-                        <div class="grid-solution">
-                            <h7>Step 3: Saving API request</h7>
-                            <p>Upon a successful authorization (200OK), users can save credentials as variables for future requests, eliminating the need to re-enter information.</p>
-                        </div>
-                        <div class="spacing-4">
-                            <div class="solution-video">
-                                <video autoplay loop src="/Videos/SavingAPIRequest.mp4"></video>
-        
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-
- 
+            <section id="usability-testing" class="project-content">
+                <h2>Usability Testing</h2>
+                <p>With no dedicated research team, I again took on the researcher role. During the design phase, I formed two hypotheses that shaped my decisions:</p>
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Hypothesis.png" alt="">
+                <p class="spacing-4">Due to budget and time constraints, recruiting end users was not feasible. Instead, I tested the feature with Postman employees who were developers and closely aligned with our target audience but had no prior exposure to the new system. This allowed me to validate the hypotheses effectively and identify areas for improvement.</p>
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Testing-Protocol.png" alt="">
                 
 
+                <h4 class="primary-content">Findings and Design Improvements</h4>
+                <h5 class="spacing-6">Issue 1: Users using shortcut key ignored the Contextual Nudge</h5>
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Observation-1.png" alt="">
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Insight.png" alt="">
+
+                <h5 class="spacing-8">Issue 2: Users using shortcut key ignored the Contextual Nudge</h5>
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Insight-2.png" alt="">
+                <img class="problem-area-image" src="/Images/Postman Auth Experience/Improvement-2.png" alt="">
+
                 
-                
-                   
             </section>
 
             <section id="impact" class="project-content">
                 <h2>Impact</h2>
                 <p>We received positive feedback from the producers on how these summary emails are beneficial for them to understand and measure their consumer’s interaction with their APIs.</p>
                 <img class="problem-area-image" src="/Images/Postman Auth Experience/Impact.png" alt="">
-
-                
-
-               
-
-            </section>
-
-            <!-- <section id="method" class="project-content">
-                <h2>Method</h2>
-                <p>We chose a movie review writing task and a suggestion system based on GTP-2 fine-tuned on the IMDb movie reviews corpus. We ask participants to watch two movies and then write a review for each, once with suggestions enabled and once without. We encouraged writers to express their personal opinions through their reviews and think aloud as they did so. Following that, We asked writers to rate the movies they watched before writing the review and allotted the suggestion system such that we got a distribution of writers along an ‘alignment spectrum’.</p>
-                <p class="spacing-3" >We collected concurrent think-aloud protocols while the users wrote their reviews and retrospective think-aloud protocols after they had finished writing. We qualitatively analyzed these with the screen recordings of the writers’ writing process. We use the Hayes Cognitive Process Model of writing (2012) as a theoretical framework to analyze our qualitative data.</p>
-                
-                <div class="primary-content">
-                    <h4>Movie Selection</h4>
-                    <p>We chose 30 movies for our study as an initial set. We chose movies that were not widely released and ‘mainstream’, to ensure that the writers had not watched the movie previously and their reviews were not affected. We also avoided
-                    polarising genres such as historical dramas, war, political movies, animated movies, and documentaries. We picked movies from those released between 1990 and 2021.
-                    </p>
-                    <p class="spacing-3">
-                    We rated the chosen movies based on ratings from three established sources: IMDb, Rotten Tomatoes (Critic and Audience scores), and Letterboxd. Ratings from all three sources were averaged on a scale of 1 to 10 and utilised for final rankings. Based on this rating, the movies were divided into three categories: Bad (1-3), Neutral (4-7), and Good (7-10).We randomly chose three movies from each category, resulting in the nine movies.
-                    </p>
-                </div>
-
-                <div class="primary-content">
-                    <h4>Participants</h4>
-                    <p>We recruited participants who were university students or recent graduates, who had at least ten years of education in English and frequently watched English movies. All participants were reasonably fluent desktop typists and identified themselves as non-native English speakers — whose mother tongues were Marathi, Hindi, Malayalam, Telugu, Assamese,and Gujarati. Their K-12 schooling, however, was completed with English as a medium of instruction. 
-                    </p>
-                    <img src="" alt="">
-                </div>
-                </section> -->
-            
-    
-
-            
-            <section id="design-approach" class="project-content">
-                <h2>Our design approach</h2>
-                <!-- <p>Every day, millions of people use Postman, creating lots of collections, workspaces, and APIs. But they have trouble seeing how well they're doing. They want to know how their APIs are doing and what users think. Furthermore, as a vital bridge connecting producers and consumers, our aim is also to empower producers to build “quality” APIs for their consumers. </p> -->
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Auth-Design-Process.png" alt="">
-
-            </section>
-
-            <section id="research" class="project-content">
-                <h2>Research</h2>
-                <p>
-                    I started by learning how to send API calls for the Top 20 teams. This hands-on experience helped me understand what our developers go through. I wrote down what I learned and checked what users were saying on various platforms. Then, I went a step further and interviewed Postman developers to understand their challenges better.
-                </p>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Research auth experience.png" alt="">
-
-                <h4 class="primary-content">Findings</h4>
-                <p class="spacing-3">I analyzed all the data collected during my research. This data not only helped me comprehend the key goals of producers but also enabled me to identify the key parameters necessary to achieve these goals.</p>
-                    <div class="grid-3 secondary-content">
-                        <div class="insight">
-                            <h5 class="auth-dark-orange-colour">Long & time consuming</h5>
-                            <p>Developers struggle with long and time-consuming authentication instructions.</p>
-                        </div>
-                        <div class="insight">
-                            <h5 class="auth-dark-orange-colour">Missing key steps</h5>
-                            <p>Sometimes, the provided instructions leave out important authentication steps, leaving developers confused.</p>
-                        </div>
-                        <div class="insight">
-                            <h5 class="auth-dark-orange-colour">Complex & Daunting</h5>
-                            <p>OAuth 2.0 authentication seems complex due to many complicated requirements.</p>
-                        </div>
-                        <div class="insight">
-                            <h5 class="auth-dark-orange-colour">Confusing field names</h5>
-                            <p>Different teams use inconsistent field names, causing confusion when mapping them with Postman's fields.</p>
-                        </div>
-                        <div class="insight">
-                            <h5 class="auth-dark-orange-colour">Annoyed by redoing</h5>
-                            <p>Users find it annoying to repeatedly authenticate.</p>
-                        </div>
-                    </div>
-            </section>
-
-            <section id="ideation" class="project-content">
-                <h2>Let's get on it</h2>
-                <p>After brainstorming with engineers, developers, & our chief engineering architect, we crafted following idea:</p>
-                
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Ideation.png" alt="">
-                <h4 class="primary-content">Layout of new authorization experience</h4>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Finding the right layout.png" alt="">
-
-                <h4 class="primary-content">'Save Credentials' Interaction</h4>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Figuring out-min.png" alt="">
-
-                <h4 class="primary-content">Preserving old authorization experience</h4>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Preserve the old authorization-min.png" alt="">
-
-                <h4 class="primary-content">Contextual nudge for the new authorization experience</h4>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Contextual Nudge.png" alt="">
-            </section>
-
-            <section id="usability-testing" class="project-content">
-                <h2>Usability Testing</h2>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Testing-Protocol.png" alt="">
-
-                <h4 class="primary-content">Issues highlighted by users</h4>
-                <p class="spacing-3">After conducting usability testing, I analyzed all the data and did the affinity mapping to highlight the following issues in the key flows:</p>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Usability Testing - Issues-min.png" alt="">
-
-                <h4 class="primary-content">Improvements in the design</h4>
-                <p class="spacing-3">After identifying the issues in the design, I did the brainstorming with my team and came up with the following changes in the key flows:</p>
-                <img class="problem-area-image" src="/Images/Postman Auth Experience/Usability Testing - Changes-min.png" alt="">
-
-            </section>
-
-
-            <section id="final-design" class="project-content">
-                <h2>Final Design</h2>
-                <p>After several round of iterations and testing, we finalized the following designs for the MVP of new authorization experience:</p>
-                
-                <div class="video-complete-box spacing-6">
-                    <div class="video">
-                        <iframe src="https://drive.google.com/file/d/1A9rnSw4tuceSpt3_7fFtrdV52t0PCnXU/preview" width="100%" height="480" allow="autoplay" ></iframe>
-                    </div>
-
-                    <div class="video-content">
-                        
-                        <p>In the above video, I have walked you through the flow of authorizing an API request on Postman via Bearer Token Authorization.</p>
-                    </div>
-                    
-                </div>
                 
             </section>
-
             
 
             <section id="reflections" class="project-content">
