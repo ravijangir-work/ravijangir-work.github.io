@@ -358,11 +358,18 @@ a.top{
     text-align: center;
 }
 
+.about-margin{
+    margin-top: 64px;
+}
+
+.about-margin-small{
+    margin-top: 4px;
+}
+
 .about-landingpage{
     font-size: 22px;
     line-height: 175%;
     text-align: center;
-    margin-top: 64px;
     color: var(--background-secondary-font-color);
 }
 
@@ -470,6 +477,24 @@ a.top{
     grid-gap: 72px var(--spacing-6);
 }
 
+
+.grid-highlights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    margin-top: var(--spacing-12);
+}
+
+.info-card{
+    padding: 16px 32px;
+    background-color: #1D1D1D;
+    border: #3F3F3F 1px solid;
+    border-radius: 12px;
+}
+
+.info-text{
+    font-size: 20px;
+}
 
 .full-width-grid{
     margin-bottom: var(--spacing-8);
